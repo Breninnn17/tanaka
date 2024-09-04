@@ -11,7 +11,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-image: linear-gradient(to right, #696767, #000000);
+  background-image: linear-gradient(to right, #580d8a, #000000);
   color: #ffffff;
 }
 li {
@@ -79,18 +79,19 @@ header .perfil {
   margin-top: 32px;
 }
 .lista-de-projetos .itens-da-lista a {
+  color: #000000;
   text-decoration: none;
-  background-color: #535050;
+  background-color: #ffffff;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
   text-align: center;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #535050;
+  border: 2px solid #000000;
   transition: all ease 0.8s;
 }
 .lista-de-projetos .itens-da-lista a:hover {
-  color: #535050;
-  background-color: #000000;
+  color: #000000;
+  background-color: #b1a8a8;
 }
