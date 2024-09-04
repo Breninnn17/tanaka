@@ -1,0 +1,118 @@
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width:767px)";
+
+@breakpointTablet: ~"(min-width:768px) and(max-width:1023px)";
+    .marginBottom8{
+        margin-bottom: 8px;
+    }
+
+.fontSize14{
+    font-size: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(105, 103, 103), rgb(0, 0, 0));
+    color: #cor[corDoTexto];
+}
+
+li {
+    list-style:none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointTablet{
+        max-width: 80%;
+    }
+
+    @media @breakpointMobile{
+        max-width: 70%;
+    }
+}
+
+header{
+    padding-bottom: 24px;
+    padding-top: 100px;
+
+    .perfil{
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }
+}
+
+.bio-perfil{
+    text-align: center;
+
+    .perfil-titulo{
+        font-size: 16px;
+        .marginBottom8();
+    }
+
+    .perfil-sub-titulo{
+        .fontSize14();
+        .marginBottom8();
+    }
+
+    .perfil-descriçao{
+        .fontSize14();
+        opacity: .9;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+
+    li {
+        list-style:none;
+
+        img {
+            transition: all ease .7s;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+    }
+}
+
+.lista-de-projetos {
+
+    .itens-da-lista {
+        margin-top: 32px;
+        a{
+            text-decoration: none;
+            background-color: #cor [corDoBotao];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #cor [corDoBotao];
+            transition: all ease .8s;
+
+            &:hover {
+                color: #cor[corDoBotao];
+                background-color: #cor[corDoFundo];
+            }
+        }
+    }
+}
